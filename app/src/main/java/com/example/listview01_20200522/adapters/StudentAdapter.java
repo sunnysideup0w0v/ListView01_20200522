@@ -35,7 +35,7 @@ public class StudentAdapter extends ArrayAdapter<Student> {
             row = inf.inflate(R.layout.student_list_item, null);
         }
         TextView nameTxt = row.findViewById(R.id.nameTxt);
-        TextView addressTxt = row.findViewWithTag(R.id.addressTxt);
+        TextView addressTxt = row.findViewById(R.id.addressTxt);
 
         Log.d("getView실행", position+"줄 실행");
 
